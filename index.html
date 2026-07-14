@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sony WH-1000XM6 | Silence, perfected.</title>
+  <meta name="description" content="Experience the flagship wireless noise-cancelling headphones from Sony. Re-engineered with custom drivers and adaptive noise-cancelling tech.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Premium Preloader Overlay -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">SONY</div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar-fill" id="loader-bar"></div>
+      </div>
+      <div class="loader-text" id="loader-text">Loading Engineering Showcase 0%</div>
+    </div>
+  </div>
+
+  <!-- Apple-style Sticky Navbar -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">WH-1000XM6</a>
+      <ul class="nav-links">
+        <li><a href="#overview" class="nav-link" data-target="0">Overview</a></li>
+        <li><a href="#technology" class="nav-link" data-target="0.25">Technology</a></li>
+        <li><a href="#noise-cancelling" class="nav-link" data-target="0.55">Noise Cancelling</a></li>
+        <li><a href="#specs" class="nav-link" data-target="0.75">Specs</a></li>
+      </ul>
+      <a href="#buy" class="nav-cta" data-target="0.95">Pre-order</a>
+    </div>
+  </header>
+
+  <!-- Main Scroll Scrollytelling Section -->
+  <div class="scroll-container" id="scroll-section">
+    <div class="sticky-wrapper">
+      
+      <!-- Ambient Backglow -->
+      <div class="ambient-glow"></div>
+      
+      <!-- HTML5 Canvas for Image Sequence -->
+      <canvas id="scrollytelling-canvas"></canvas>
+
+      <!-- Mouse/Scroll Hint (visible at the start) -->
+      <div class="scroll-hint" id="scroll-hint">
+        <span>Scroll to disassemble</span>
+        <div class="scroll-hint-mouse">
+          <div class="scroll-hint-wheel"></div>
+        </div>
+      </div>
+
+      <!-- Text Overlay Over Canvas -->
+      <div class="text-overlay">
+        
+        <!-- Beat 1: Intro (0% to 15%) -->
+        <div class="story-beat beat-hero active" id="beat-intro">
+          <span class="eyebrow">The Next Generation</span>
+          <h1>Sony WH-1000XM6</h1>
+          <p class="subheadline">Silence, perfected.</p>
+          <p class="body-text" style="max-width: 600px; margin: 0 auto;">
+            Flagship wireless noise cancelling, re-engineered for a world that never stops.
+          </p>
+        </div>
+
+        <!-- Beat 2: Engineering Reveal (15% to 40%) -->
+        <div class="story-beat beat-left" id="beat-engineering">
+          <span class="eyebrow">Acoustic Architecture</span>
+          <h2>Precision-engineered for silence.</h2>
+          <p class="body-text">
+            Custom-developed dynamic drivers, sealed acoustic chambers, and optimized airflow paths work in harmony to deliver studio-grade clarity.
+          </p>
+          <p class="body-text">
+            Every millimeter is tuned for weight balance, acoustic power, and unmatched fit comfort—hour after hour.
+          </p>
+        </div>
+
+        <!-- Beat 3: Noise Cancelling & Mics (40% to 65%) -->
+        <div class="story-beat beat-right" id="beat-anc">
+          <span class="eyebrow">Smart Isolation</span>
+          <h2>Adaptive noise cancelling, redefined.</h2>
+          <ul class="feature-list">
+            <li>A multi-microphone array monitors sound in every direction.</li>
+            <li>Real-time processors adapt isolation to your immediate surroundings.</li>
+            <li>Airports, offices, and heavy traffic fade away, leaving only pure audio.</li>
+          </ul>
+        </div>
+
+        <!-- Beat 4: Sound Heritage & AI (65% to 85%) -->
+        <div class="story-beat beat-left" id="beat-sound">
+          <span class="eyebrow">Audio Performance</span>
+          <h2>Immersive, lifelike sound.</h2>
+          <p class="body-text">
+            High-performance voice coils and neodymium magnets unlock detail, depth, and texture in every track.
+          </p>
+          <p class="body-text">
+            AI-enhanced real-time upscaling restores high-range harmonics to compressed files, bringing you closer to the studio experience.
+          </p>
+        </div>
+
+        <!-- Beat 5: Reassembly & Buy CTA (85% to 100%) -->
+        <div class="story-beat beat-hero" id="beat-cta">
+          <span class="eyebrow">Sony Flagship Wireless</span>
+          <h2>Hear everything.<br>Feel nothing else.</h2>
+          <p class="subheadline" style="max-width: 600px; margin: 0 auto 1.5rem auto;">
+            WH-1000XM6. Designed for absolute focus, crafted for signature comfort.
+          </p>
+          <div class="cta-group">
+            <a href="#buy" class="btn-primary" id="btn-preorder">Experience WH-1000XM6</a>
+            <a href="#specs" class="btn-secondary" id="btn-specs">See full specs</a>
+          </div>
+          <p class="body-text" style="font-size: 0.8rem; margin-top: 1.5rem; opacity: 0.5;">
+            Engineered for airports, offices, and everything in between.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
